@@ -1,5 +1,6 @@
 import Texts from '../Texts'
 import { TEXTS_SIDEBAR } from '../Header.data'
+import CloseIcon from '@mui/icons-material/Close'
 
 type SideBarProps = {
   isOpen: boolean
@@ -24,9 +25,7 @@ const SideBar = ({ isOpen, onClose }: SideBarProps) => {
           ${isOpen ? 'absolute' : 'hidden'}
         `}
     >
-      <span className='self-end text-xl' onClick={() => onClose()}>
-        X
-      </span>
+      <CloseIcon className='self-end w-7' onClick={() => onClose()} />
       <Texts items={TEXTS_SIDEBAR} isColumn={true} />
     </nav>
   )
