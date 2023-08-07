@@ -13,10 +13,11 @@ const Introduction = () => {
           on mobile and online for everyone
         </p>
         <Button
-          content='Button'
-          textColor='text-blue-500'
-          style='outlined'
+          content='Consult today'
+          textColor='text-white'
           padding='px-9'
+          bgColor='bg-blue-500'
+          style='filled'
         />
       </div>
       <Image
