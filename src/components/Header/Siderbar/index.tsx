@@ -25,7 +25,7 @@ const SideBar = ({ isOpen, onClose }: SideBarProps) => {
           ${isOpen ? 'absolute' : 'hidden'}
         `}
     >
-      <CloseIcon className='self-end w-7' onClick={() => onClose()} />
+      <CloseIcon className='self-end w-7' onClick={onClose} />
       <Texts items={TEXTS_SIDEBAR} isColumn={true} />
     </nav>
   )
