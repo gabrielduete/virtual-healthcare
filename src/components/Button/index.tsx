@@ -24,6 +24,9 @@ const Button = ({
         py-3
         text-lg
         font-semibold
+        hover:opacity-75
+        delay-50 
+        duration-500
         ${textColor} 
         ${padding} 
         ${isOutlined && 'outline outline-2'} 
