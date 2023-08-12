@@ -23,7 +23,7 @@ const Introduction = () => {
       <div className='hidden lg:block'>
         <Image
           src='https://media.discordapp.net/attachments/778024116140769331/1137638119047446629/trafalgar-header_illustration_1.png'
-          alt='decorative image'
+          alt='Decorative medical design'
           width={700}
           height={600}
         />
