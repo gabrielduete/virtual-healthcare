@@ -1,5 +1,13 @@
+import Introduction from '~/src/components/Introduction'
+import Header from '~/src/components/Header'
+
 const Home = () => {
-  return <h1 className='text-3xl font-bold underline'>HELLO WORLD!</h1>
+  return (
+    <main>
+      <Header />
+      <Introduction />
+    </main>
+  )
 }
 
 export default Home
