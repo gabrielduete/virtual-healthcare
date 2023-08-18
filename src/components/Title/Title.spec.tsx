@@ -6,7 +6,7 @@ describe('<Title />', () => {
   it('should render title correctly', () => {
     const title = 'Shiryu amigo'
 
-    render(<Title content={title} />)
+    render(<Title>{title}</Title>)
 
     expect(screen.getByText(title)).toBeInTheDocument()
   })
