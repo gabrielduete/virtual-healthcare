@@ -7,7 +7,7 @@ const Introduction = () => {
   return (
     <section className='max-md:px-4 px-48 flex justify-center items-center gap-28'>
       <div>
-        <Title type='large' width='max-w-[427px]'>
+        <Title fontSize='text-5xl' width='max-w-[427px]'>
           Virtual healthcare for you
         </Title>
         <p className='text-gray-500 text-xl mt-6 mb-11 max-w-[410px]'>
