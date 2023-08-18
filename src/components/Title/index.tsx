@@ -1,10 +1,21 @@
+import React from 'react'
+
 type TitleProps = {
-  content: string
+  children: string | React.ReactElement
+  type: 'large' | 'medium'
   width?: string
 }
 
-const Title = ({ content, width }: TitleProps) => {
-  return <h1 className={`text-5xl font-bold break-all ${width}`}>{content}</h1>
+const Title = ({ children, type, width }: TitleProps) => {
+  return (
+    <h1
+      className={`font-bold break-all ${width} ${
+        type === 'large' ? 'text-5xl' : 'text-3xl'
+      }`}
+    >
+      {children}
+    </h1>
+  )
 }
 
 export default Title
