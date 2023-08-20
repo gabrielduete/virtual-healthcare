@@ -1,7 +1,9 @@
+import { ReactElement } from 'react'
+
 import { conditionsStyle } from './Button.data'
 
 type ButtonProps = {
-  content: string
+  content: string | ReactElement
   style: 'filled' | 'outlined'
   bgColor?: 'bg-blue-500'
   textColor: 'text-white' | 'text-blue-500'
