@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react'
 
-import { CARDS } from './SectionServices.data'
+import { CARDS } from './Cards/Cards.data.js'
 
 import SectionServices from '.'
 
