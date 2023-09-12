@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Logo from './Logo'
+import Logo from '../Logo'
 import Texts from './Texts'
 import SideBar from './Siderbar'
 
@@ -14,7 +14,7 @@ const Header = () => {
     <>
       <SideBar isOpen={isOpen} onClose={() => setIsOpen(false)} />
       <header className='flex justify-between items-center p-4 xl:px-48 xl:py-16'>
-        <Logo />
+        <Logo type='black' />
         <nav className='hidden xl:block'>
           <Texts items={TEXTS_SIDEBAR} />
         </nav>
