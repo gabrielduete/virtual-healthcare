@@ -7,7 +7,7 @@ type ButtonProps = {
   style: 'filled' | 'outlined'
   bgColor?: 'bg-blue-500'
   textColor: 'text-white' | 'text-blue-500'
-  padding: 'px-9' | 'px-11'
+  padding: 'px-9' | 'px-11' | 'px-16'
 }
 
 const Button = ({
