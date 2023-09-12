@@ -16,7 +16,7 @@ const Title = ({
   linePositionCenter,
 }: TitleProps) => {
   return (
-    <h1 className={`font-bold break-all ${width} ${fontSize}`}>
+    <h1 className={`font-bold break-normal ${width} ${fontSize}`}>
       <span className='flex flex-col gap-6'>
         {children}
         {hasLine && (
