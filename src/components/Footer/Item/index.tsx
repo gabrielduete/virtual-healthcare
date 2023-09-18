@@ -8,7 +8,7 @@ type ItemProps = {
 const Item = ({ title, items }: ItemProps) => {
   return (
     <div>
-      <Title>{title}</Title>
+      <Title color='white'>{title}</Title>
       <div className='mt-6'>
         {items.map(text => {
           return (

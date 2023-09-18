@@ -23,7 +23,9 @@ const Cards = () => {
               />
             </div>
             <Title fontSize='text-2xl'>{title}</Title>
-            <p className='w-64 mt-3 text-gray-500'>{subtitle}</p>
+            <p className='max-sm:max-w-64 sm:w-64 mt-3 text-gray-500'>
+              {subtitle}
+            </p>
           </div>
         )
       })}

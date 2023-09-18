@@ -8,12 +8,16 @@ import {
   SetStateAction,
 } from 'react'
 
+import { DEPOIMENTS } from './Depoiments.data'
+
 type DepoimentsParams = {
   step: number
   setStep: Dispatch<SetStateAction<number>>
   prevStep: () => void
   nextStep: () => void
   goToStep: (index: number) => void
+  firstStep: boolean
+  lastStep: boolean
 }
 
 export const DepoimentsContext = createContext<DepoimentsParams>({
@@ -22,28 +26,39 @@ export const DepoimentsContext = createContext<DepoimentsParams>({
   prevStep: () => {},
   nextStep: () => {},
   goToStep: (index: number) => {},
+  firstStep: true,
+  lastStep: false,
 })
 
 export const DepoimentsStorage = ({ children }: { children: ReactNode }) => {
   const [step, setStep] = useState(0)
 
+  const firstStep = step === 0
+  const lastStep = step + 1 > DEPOIMENTS.length - 1
+
   const prevStep = () => {
-    setStep(step - 1)
+    !firstStep && setStep(step - 1)
   }
 
   const nextStep = () => {
-    setStep(step + 1)
+    !lastStep && setStep(step + 1)
   }
 
   const goToStep = (index: number) => {
     setStep(index)
   }
 
-  console.log(step)
-
   return (
     <DepoimentsContext.Provider
-      value={{ setStep, step, prevStep, nextStep, goToStep }}
+      value={{
+        setStep,
+        step,
+        prevStep,
+        nextStep,
+        goToStep,
+        firstStep,
+        lastStep,
+      }}
     >
       {children}
     </DepoimentsContext.Provider>
