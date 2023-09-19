@@ -5,6 +5,7 @@ import SectionProviders from '~/src/components/SectionProviders'
 import SectionApps from '~/src/components/SectionApps'
 import Articles from '~/src/components/Articles'
 import Footer from '~/src/components/Footer'
+import Depoiments from '~/src/components/Depoiments'
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <SectionServices />
       <SectionProviders />
       <SectionApps />
+      <Depoiments />
       <Articles />
       <Footer />
     </main>
