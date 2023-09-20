@@ -14,6 +14,7 @@ const Arrows = () => {
         className={`cursor-pointer ${
           firstStep ? 'text-sky-300' : 'text-blue-500'
         }`}
+        data-testid='depoiments-arrow__id-arrowBack'
         onClick={() => prevStep()}
       />
       <div className='flex gap-4'>
@@ -23,8 +24,9 @@ const Arrows = () => {
               className={`w-2.5	h-2.5 rounded-full cursor-pointer ${
                 id === step ? 'bg-blue-500' : 'bg-sky-300'
               }`}
-              onClick={() => goToStep(id)}
+              data-testid={`depoiments-arrow__id-${id}`}
               key={id}
+              onClick={() => goToStep(id)}
             />
           )
         })}
@@ -33,6 +35,7 @@ const Arrows = () => {
         className={`cursor-pointer ${
           lastStep ? 'text-sky-300' : 'text-blue-500'
         }`}
+        data-testid='depoiments-arrow__id-arrowForward'
         onClick={() => nextStep()}
       />
     </div>
