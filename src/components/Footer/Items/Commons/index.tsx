@@ -1,11 +1,11 @@
-import Title from '../../Title'
+import Title from '../../../Title'
 
-type ItemProps = {
+type CommonsProps = {
   title: string
   items: string[]
 }
 
-const Item = ({ title, items }: ItemProps) => {
+const Commons = ({ title, items }: CommonsProps) => {
   return (
     <div>
       <Title color='white'>{title}</Title>
@@ -22,4 +22,4 @@ const Item = ({ title, items }: ItemProps) => {
   )
 }
 
-export default Item
+export default Commons
