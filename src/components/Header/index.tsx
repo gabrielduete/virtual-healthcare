@@ -18,7 +18,9 @@ const Header = () => {
         <nav className='hidden xl:block'>
           <Texts items={TEXTS_SIDEBAR} />
         </nav>
-        <MenuIcon onClick={() => setIsOpen(true)} className='block xl:hidden' />
+        <div className='hidden max-xl:block'>
+          <MenuIcon onClick={() => setIsOpen(true)} />
+        </div>
       </div>
     </header>
   )
