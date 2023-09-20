@@ -13,7 +13,7 @@ export const DEPOIMENTS = [
       'https://media.discordapp.net/attachments/778024116140769331/1151700614275936326/presidente.png?width=671&height=671',
     name: 'Gabriel Duete',
     jobRole: 'Presidente da república',
-    depoiment: 'Eu como presidente, Digo: Esse site é bala demais!',
+    depoiment: 'Eu como presidente, digo: Esse site é bala demais!',
     id: 1,
   },
   {
