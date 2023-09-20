@@ -11,16 +11,16 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false)
 
   return (
-    <>
+    <header className='fixed top-0 left-0 w-full z-50 bg-white'>
       <SideBar isOpen={isOpen} onClose={() => setIsOpen(false)} />
-      <header className='flex justify-between items-center p-4 xl:px-48 xl:py-16'>
+      <div className='flex justify-between items-center p-4 xl:px-48'>
         <Logo type='black' />
         <nav className='hidden xl:block'>
           <Texts items={TEXTS_SIDEBAR} />
         </nav>
         <MenuIcon onClick={() => setIsOpen(true)} className='block xl:hidden' />
-      </header>
-    </>
+      </div>
+    </header>
   )
 }
 

@@ -6,7 +6,10 @@ import { DepoimentsStorage } from './context'
 const Depoiments = () => {
   return (
     <DepoimentsStorage>
-      <section className='flex flex-col items-center justify-center px-9 mb-56'>
+      <section
+        className='flex flex-col items-center justify-center px-9 mb-56'
+        id='depoiments'
+      >
         <Cards />
         <Arrows />
       </section>

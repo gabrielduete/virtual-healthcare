@@ -7,7 +7,10 @@ import DownloadIcon from '@mui/icons-material/Download'
 
 const SectionApps = () => {
   return (
-    <section className='flex gap-36 items-center justify-center px-9 mb-56'>
+    <section
+      className='flex gap-36 items-center justify-center px-9 mb-56'
+      id='apps'
+    >
       <div>
         <Title hasLine={true} fontSize='text-4xl' width='max-w-[250px]'>
           Download our mobile apps

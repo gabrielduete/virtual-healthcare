@@ -4,7 +4,10 @@ import Cards from './Cards/Cards'
 
 const SectionServices = () => {
   return (
-    <section className='flex flex-col items-center justify-center mt-48 mb-52 max-md:px-4 px-48'>
+    <section
+      className='flex flex-col items-center justify-center mt-48 mb-52 max-md:px-4 px-48'
+      id='findADoctor'
+    >
       <Title fontSize='text-3xl' hasLine={true} linePositionCenter={true}>
         Our Services
       </Title>

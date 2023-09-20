@@ -1,7 +1,22 @@
 export const TEXTS_SIDEBAR = [
-  'Home',
-  'Find a doctor',
-  'Apps',
-  'Testimonials',
-  'About us',
+  {
+    name: 'Home',
+    id: 'introduction',
+  },
+  {
+    name: 'Find a doctor',
+    id: 'findADoctor',
+  },
+  {
+    name: 'Apps',
+    id: 'apps',
+  },
+  {
+    name: 'Testimonials',
+    id: 'depoiments',
+  },
+  {
+    name: 'About us',
+    id: 'aboutUs',
+  },
 ]

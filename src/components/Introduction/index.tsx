@@ -5,7 +5,10 @@ import Button from '../Button'
 
 const Introduction = () => {
   return (
-    <section className='max-md:px-4 px-48 flex justify-center items-center gap-28'>
+    <section
+      className='max-md:px-4 px-48 flex justify-center items-center gap-28 mt-28'
+      id='introduction'
+    >
       <div>
         <Title fontSize='text-5xl' width='max-w-[427px]'>
           Virtual healthcare for you
