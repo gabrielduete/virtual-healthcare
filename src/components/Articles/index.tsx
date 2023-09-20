@@ -5,7 +5,10 @@ import Title from '../Title'
 const Articles = () => {
   return (
     <>
-      <section className='flex flex-col items-center justify-center mt-48 mb-52 max-md:px-4 px-48'>
+      <section
+        className='flex flex-col items-center justify-center mt-48 mb-52 max-md:px-4 px-48'
+        id='aboutUs'
+      >
         <Title fontSize='text-3xl' hasLine={true} linePositionCenter={true}>
           Check out our latest article
         </Title>

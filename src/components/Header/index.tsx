@@ -11,7 +11,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false)
 
   return (
-    <header className='fixed w-full z-50 bg-white'>
+    <header className='fixed top-0 left-0 w-full z-50 bg-white'>
       <SideBar isOpen={isOpen} onClose={() => setIsOpen(false)} />
       <div className='flex justify-between items-center p-4 xl:px-48'>
         <Logo type='black' />
