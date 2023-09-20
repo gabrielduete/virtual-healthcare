@@ -5,7 +5,9 @@ import { TEXTS_SIDEBAR } from '../Header.data'
 import SideBar from '.'
 
 describe('<SideBar />', () => {
-  it.each(TEXTS_SIDEBAR)('should render text %p when isOpen is true', text => {
+  const items = TEXTS_SIDEBAR.map(item => item.name)
+
+  it.each(items)('should render text %p when isOpen is true', name => {
     render(
       <SideBar
         isOpen={true}
@@ -15,7 +17,7 @@ describe('<SideBar />', () => {
       />
     )
 
-    expect(screen.getByText(text)).toBeInTheDocument()
+    expect(screen.getByText(name)).toBeInTheDocument()
   })
 
   it('close sideBar when isOpen is false', () => {
