@@ -13,8 +13,8 @@ const SideBar = ({ isOpen, onClose }: SideBarProps) => {
       className={`
           right-0
           top-0
-          h-screen
-          bg-sky-100
+          bg-blue-500
+          text-white
           flex
           flex-col
           gap-2
