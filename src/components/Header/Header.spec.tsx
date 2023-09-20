@@ -9,8 +9,10 @@ describe('<Header />', () => {
     render(<Header />)
   })
 
-  it.each(TEXTS_SIDEBAR)('should render %p correctly', text => {
-    waitFor(() => expect(screen.getByText(text)).toBeInTheDocument())
+  const texts = TEXTS_SIDEBAR.map(text => text.name)
+
+  it.each(texts)('should render %p correctly', name => {
+    waitFor(() => expect(screen.getByText(name)).toBeInTheDocument())
   })
 
   it('should render logo correctly', () => {

@@ -1,7 +1,9 @@
 import Logo from '../Logo'
-import Item from './Item'
 
-import items from './Footer.data'
+import Links from './Items/Links'
+
+import { itemsCommons, itemsLinks } from './Footer.data'
+import Commons from './Items/Commons'
 
 const Footer = () => {
   return (
@@ -33,8 +35,9 @@ const Footer = () => {
         </p>
       </div>
       <div className='flex max-lg:flex-col gap-40 max-lg:gap-14'>
-        {items.map(({ title, texts }) => {
-          return <Item title={title} items={texts} key={title} />
+        <Links title={itemsLinks[0].title} items={itemsLinks[0].texts} />
+        {itemsCommons.map(({ title, texts }) => {
+          return <Commons title={title} items={texts} key={title} />
         })}
       </div>
     </footer>

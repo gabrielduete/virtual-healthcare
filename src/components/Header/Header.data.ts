@@ -1,11 +1,11 @@
 export const TEXTS_SIDEBAR = [
   {
     name: 'Home',
-    id: 'introduction',
+    id: 'home',
   },
   {
     name: 'Find a doctor',
-    id: 'findADoctor',
+    id: 'find-doctor',
   },
   {
     name: 'Apps',
@@ -13,10 +13,10 @@ export const TEXTS_SIDEBAR = [
   },
   {
     name: 'Testimonials',
-    id: 'depoiments',
+    id: 'testimonials',
   },
   {
     name: 'About us',
-    id: 'aboutUs',
+    id: 'about',
   },
 ]

@@ -6,7 +6,7 @@ const SectionServices = () => {
   return (
     <section
       className='flex flex-col items-center justify-center mt-48 mb-52 max-md:px-4 px-48'
-      id='findADoctor'
+      id='find-doctor'
     >
       <Title fontSize='text-3xl' hasLine={true} linePositionCenter={true}>
         Our Services
