@@ -1,3 +1,16 @@
-# In progress
+<h1 align='center'>
+    Virtual Healthcare
+</h1>
 
-# Figma: https://www.figma.com/file/EWmzcVkd7qbP5Nf7iMvuqP/Trafalgar-Landing-Page?type=design&node-id=1-2&mode=design&t=QRMEjkQe953QmKGM-0
+# 🤔 About
+
+# 💻 Techs
+
+- [JavaScript](https://www.javascript.com/)
+- [ReactJS](https://reactjs.org/)
+- [Material UI](https://mui.com/)
+- [Chuck Norris API](https://api-ninjas.com/api/chucknorris)
+
+## 🧐 Preview
+
+## 👉 Try:
